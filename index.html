@@ -1,226 +1,684 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Corona Virus (COVID19) Tracker</title>
-  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161937150-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-  gtag('config', 'UA-161937150-1');
-</script>
-</head>
+    <title>Cascer</title>
+  </head>
+  <body>
+    <section class="contact-bar">
+      <div class="container cnt-btr">
+        <div class="row">
+          <div class="col-md-6">Cascer</div>
+          <div class="col-md-6 flex-rev">
+            <ul class="flex-cont">
+              <img src="images/phone.png" alt="phone" width="14">
+              <li>91 999 999 999</li>
+              <li>Log in</li>
+              <li><button type="button" class="btn btn-outline-primary signup_btn">Sign Up</button></li>
+              <li><select id="flags">
+  <option value="us">US</option>
+  <option value="uk">UK</option>
+</select></li>
+<li><img src="images/bars.png" alt="bars" width="14"></li>
+            </ul>
+          </div>        
+</div>
+</div>
+    </section>
 
-<body ng-app="coronatracker" ng-controller="mainController" oncontextmenu="return false;">
-  <div class="container">
-    <div class="row mt30">
-      <div class="col-md-12 text-center">
-        <div class="fs24">COVID - 19 CORONAVIRUS PANDEMIC</div>
-        <div class="fs pb25">Last update on : {{global_stats.lastUpdate | date:'medium'}}</div>
+
+
+
+
+<section class="navbar pt-4">
+  <div class="container cnt-nav">
+    <div class="row">
+      <div class="col-12">
+        <ul>
+          <li>About us</li>
+          <li>Academic</li>
+          <li>Pla;orms</li>
+          <li>Solutions</li>
+          <li>Resources</li>
+          <li>School</li>
+          <li>Tutor</li>
+          <li>Global</li>
+        </ul>
       </div>
     </div>
-    <div class="row">
-<!--right-->
-
-      <div class="col-md-3">
-        <div class="row">
-          <div>
-            <div class="glbstatus ff-circular-med">GLOBAL STATS</div>
-          </div>
-        </div>
-        <div class="row mt30">
-          <div class="col-md-12">
-            <div class="recvr mb30">
-              <div class="ff-circular-med touchgrn">RECOVERED</div>
-                 <div class="col-md-9 col-xs-10 col-sm-11"></div>
-              <div class="col-md-3 col-xs-2 col-sm-1"><div class="grndot"></div></div>
-              <div class="fs29 ff-circular-med fc-green">{{global_stats.recovered.value | number}}</div>
-              
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="cnfrmd mb30">
-               <div class="col-md-9 col-xs-10 col-sm-11"></div>
-              <div class="col-md-3 col-xs-2 col-sm-1"><div class="yellordot"></div></div>
-              <div class="fs29 ff-circular-med fc-yellow">{{global_stats.confirmed.value | number}}</div>
-              <div class="ff-circular-med touchylw">CONFIRMED</div>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="dead">
-               <div class="col-md-9 col-xs-10 col-sm-11"></div>
-              <div class="col-md-3 col-xs-2 col-sm-1"><div class="rddot"></div></div>
-              <div class="fs29 ff-circular-med fc-red">{{global_stats.deaths.value | number}}</div>
-              <div class="ff-circular-med touchrd">DEAD</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- <div class="bgwhite mt60 mbs">
-          <div class="">
-            <div class="logo"><img src="assets/img/bacteria.svg"></div>
-            <div class="headings ff-circular-bold">CORONA TRACKER</div>
-          </div>
-          <div>
-            <hr>
-          </div>
-          <div class="sidebar-col-1-desc-cont">
-            <div class="fs pb25 ff-sfpro-reg">For more up-to-date information on the COVID-19 outbreaks
-              please visit
-              <span><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019"
-                  target="_blank">WHO</a></span> </div>
-            <div class="fs pb25">Last update on : {{global_stats.lastUpdate | date:'medium'}}</div>
-          </div>
-        </div> -->
-        
-      </div>
+  </div>
+</section>
 
 
-<!--left-->
-
-      <div class="col-md-9">
-        <div class="row">
-          <div>
-            <div class="ctrystatus ff-circular-med">
-              COUNTRY STATS</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div>
-              <select name="country" class="form-control slct" ng-model="selected_ctry"
-                ng-change="getcountrystats(selected_ctry)">
-                <option value="" ng-selected="true" ng-disabled="true">Select Country</option>
-                <option ng-repeat="country in countries_list" value="{{country.iso3}}">
-                  {{country.name}}</option>
-              </select>
-            </div>
-          </div>
-        </div>
-        <div class="row mauto" ng-if="!nodata">
-          <div class="col-md-12 white">
-            <div class="col-md-4">
-              <div class="bgclr">
-                <div><img src="assets/img/black-and-gray-desk-globe-1249525.jpg"></div>
-                <div class="totlcases">
-                  <div class="heading2 ff-circular-med"><img src="assets/img/pin-icon.png" alt="pin">{{selected_ctry}}</div>
-                  <div class="totalvals ff-circular-med">{{total | number}} TOTAL CASES</div>
-                </div>
-              </div>
-            </div>    
-            <div class="col-md-8 pt60 pbPh">
-              <div class="prgs">
-                <div>
-                  <div id="rec" class="ff-circular-med">RECOVERED</div>
-                  <div id="rvrc" class="ff-circular-med">{{countries_stats.recovered.value | number}}
-                  </div>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar greenPrg" role="progressbar"
-                    aria-valuenow="countries_stats.recovered.value"
-                    aria-valuemin="{{countries_stats.recovered.value}}" aria-valuemax="{{total}}"
-                    ng-style="{'width':rcvrd_perctg}">
-                  </div>
-                </div>
-              </div>
-              <div class="prgs">
-                <div>
-                  <div id="cnf" class="ff-circular-med">CONFIRMED</div>
-                  <div id="cnfrmc" class="ff-circular-med">
-                    {{countries_stats.confirmed.value | number}}</div>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar yellowPrg" role="progressbar"
-                    aria-valuenow="countries_stats.deaths.value"
-                    aria-valuemin="{{countries_stats.deaths.value}}" aria-valuemax="{{total}}"
-                    ng-style="{'width':cnfrm_perctg}">
-                  </div>
-                </div>
-              </div>
-              <div class="pds">
-                <div>
-                  <div id="det" class="ff-circular-med">DEAD</div>
-                  <div id="dthc" class="ff-circular-med">{{countries_stats.deaths.value | number}}
-                  </div>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar redPrg" role="progressbar"
-                    ria-valuenow="countries_stats.deaths.value"
-                    aria-valuemin="{{countries_stats.deaths.value}}" aria-valuemax="{{total}}"
-                    ng-style="{'width':deaths_perctg}">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row" ng-if="nodata">
-          <div class="col-xs-12 white text-center" >
-            <div class="nodata-cont">
-              <div class="nodata-icon">
-                <img src="assets/img/no-data.png" alt="No data">
-              </div>
-              <div class="nodata-desc ff-circular-med" ng-if="selected_ctry != null">
-                Data not available.
-              </div>
-              <div class="nodata-desc" ng-if="selected_ctry == null">Please select a country.</div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- <div class="bgwhite mt60">
-          <div class="heading2 ff-circular-bold">PRECAUTIONERY STEPS</div>
-          <div>
-            <hr>
-          </div>
-          <div class="pb30 pt30">
-            <div class="logo"><img src="assets/img/hand.png"></div>
-            <div class="inCnt">Wash your hands frequently</div>
-          </div>
-          <div class="pb30">
-            <div class="logo"><img src="assets/img/house.png"></div>
-            <div class="inCnt">Stay at home to avoid contact.</div>
-          </div>
-          <div class="pb30">
-            <div class="logo"><img src="assets/img/masks.png"></div>
-            <div class="inCnt">Use mask if its necessary</div>
-          </div>
-        
-          <div class="pb30">
-            <div class="logo"><img src="assets/img/croud.png"></div>
-            <div class="inCnt">Maintain social distancing</div>
-          </div>
-        </div> -->
-      </div>
+<!-- <section class="banner">
+  <div class="container">
+  <div class="row">
+    <div class="col-12">
+      
+    </div>
+  </div>
+  </div>
+</section> -->
 
 
-    </div><!--row end-->
+<section class="counter">
+<div class="container">
+  <div class="row">
+    <div class="col-3 p-0">
+    
+    <div class="stud">
+      <h6>4000 +</h6>
+      <p>Students</p>
+    </div>
 
-<div class="row ftr">
-      <div class="col-sm-4 excrin">
-        <div class="">Developed by<a href="#" target="_blank"> Daniel D'souza</a></div>
-      </div>
-      <div class="col-md-8 dataSrc">
-        <div class="">Data sources from <a href="https://coronavirus.jhu.edu/map.html" target="_blank">John Hopkins University</a></div>
-      </div>
+   </div>
+
+    <div class="col-3 p-0 custom-border">
+
+    <div class="teach">
+      <h6>100+</h6>
+      <p>Teachers</p>
+    </div>
+  </div>
+
+    <div class="col-3 p-0 custom-border">
+
+    <div class="sub">
+      <h6>50+</h6>
+      <p>Subjects</p>
+    </div>
+  </div>
+    <div class="col-3 p-0">
+
+    <div class="con">
+      <h6>04</h6>
+      <p>Countries</p>
+    </div>
+  </div>
+  
+  </div>
+  </div>
+
+
+</section>
+
+
+
+<section class="wedo">
+  <div class="container">
+  <div class="row">
+    <div class="col-6">
+      <h5>
+        We are providing online learning
+Pla/ormsStudents learn on their own
+schedule. Online degree.
+      </h5>
+
+      <p>Cascer University’s innovative approach to distance learning has made
+quality educa0on accessible for students around the world for more
+than 25 years. Discover how an Embry-Riddle degree can enrich your
+future today!Embry-Riddle Aeronau0cal University’s innova0ve
+approach to distance learning has made quality educa0on accessible for
+students around the world for more than 25 years. Discover how an
+Embry-Riddle degree can.</p>
+    </div>
+    <div class="col-6 text-center">
+      <iframe style="border-radius: 10px;" width="550" height="550" src="https://www.youtube.com/embed/DGQwd1_dpuc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+<section class="course">
+
+  <div class="container">
+      <h3>Find Your Courses</h3>
+
+  <div class="row">
+    
+<div class="container filter-box">
+   <div class="col-md-3">
+    <div class="floating-label">  
+      <select class="floating-select" onclick="this.setAttribute('value', this.value);" value="">
+        <optgroup>
+        <option value=""></option>
+        <option value="1">CBSE</option>
+        <option value="2">State Board</option>
+      </optgroup>
+      </select>
+      <span class="highlight"></span>
+      <label>Syllabus</label>
+    </div>
+   </div>
+
+   <div class="col-md-3">
+    <div class="floating-label">  
+      <select class="floating-select" onclick="this.setAttribute('value', this.value);" value="">
+        <option value=""></option>
+        <option value="1">GRADE 08</option>
+        <option value="2">GRADE 07</option>
+      </select>
+      <span class="highlight"></span>
+      <label>Grade</label>
+    </div>
+   </div>
+
+
+   <div class="col-md-3">
+    <div class="floating-label">  
+      <select class="floating-select" onclick="this.setAttribute('value', this.value);" value="">
+        <option value=""></option>
+        <option value="1">ENGLISH</option>
+        <option value="2">TAMIL</option>
+        <option value="2">HINDHI</option>
+      </select>
+      <span class="highlight"></span>
+      <label>Subjects/ Language</label>
+    </div>
+   </div>
+
+
+   <div class="col-md-3">
+      <img src="images/search.png" alt="search"/ width="80" id="search">
+   </div>
+
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="result-btn">
+<p>See all results</p>
+<img src="images/arrow-right.png" alt="arrow"/>
+</div>
+    </div>
+  </div>
+</div>
+
+   <div class="container">
+     <div class="row">
+
+       <div class="col-md-6">
+       <div class="container">
+         <div class="row crd-shadow">
+           <div class="col-md-4 bg-white p-0">
+             <img src="images/book.jpeg" alt="book" width="200" />
+           </div>
+           <div class="col-md-8 bg-white crd-txt">
+            <h5>Master Polite English</h5>
+            <p>Learn the 3 Golden Rules and 6 Principles of
+Polite Speaking in English. In this course, you will
+learn how to speak politely in English.</p>
+<ul>
+  <li>You need to have an Intermediate level of English.</li>
+</ul>
+
+<p>Created by Dylan Gates</p>
+
+<div class="more-btn">
+<p>Know more</p>
+<img src="images/arrow-right.png" alt="arrow"/>
+</div>
+
+          </div>
+         </div>
+       </div>
+     </div>
+
+<!--card end-->
+
+<div class="col-md-6">
+       <div class="container">
+         <div class="row crd-shadow">
+           <div class="col-md-4 bg-white p-0">
+             <img src="images/book.jpeg" alt="book" width="200" />
+           </div>
+           <div class="col-md-8 bg-white crd-txt">
+            <h5>Master Polite English</h5>
+            <p>Learn the 3 Golden Rules and 6 Principles of
+Polite Speaking in English. In this course, you will
+learn how to speak politely in English.</p>
+<ul>
+  <li>You need to have an Intermediate level of English.</li>
+</ul>
+
+<p>Created by Dylan Gates</p>
+
+<div class="more-btn">
+<p>Know more</p>
+<img src="images/arrow-right.png" alt="arrow"/>
+</div>
+
+          </div>
+         </div>
+       </div>
+     </div>
+
+     <!--card end-->
+
+     </div>
+   </div>
+ 
+</div>
+
 
     </div>
   </div>
-<script type="text/javascript" src="assets/js/min.js"></script>
-</body>
+  
+</section>
 
 
+
+
+<section class="service">
+  <div class="container">
+    <h3>Types of services</h3>
+  <div class="row">
+
+    <div class="col-md-3 crd-serv">
+      <p><img src="images/pencil.png" alt="pencil" width="90"></p>
+      <h5>Institutions</h5>
+      <p>You can earn an online degree virtually
+anywhere. CuFng-edge technology and
+world-class educators provide.</p>
+
+<p class="arrow-btn"><img src="images/arrow-right.png" alt="arrow"/></p>
+
+    </div>
+
+    <!--card--end-->
+
+    <div class="col-md-3 crd-serv">
+      <p><img src="images/pencil.png" alt="pencil" width="90"></p>
+      <h5>Tutoring</h5>
+      <p>You can earn an online degree virtually
+anywhere. CuFng-edge technology and
+world-class educators provide.</p>
+
+<p class="arrow-btn"><img src="images/arrow-right.png" alt="arrow"/></p>
+
+    </div>
+
+    <!--card--end-->
+
+    <div class="col-md-3 crd-serv">
+      <p><img src="images/pencil.png" alt="pencil" width="90"></p>
+      <h5>Classes</h5>
+      <p>You can earn an online degree virtually
+anywhere. CuFng-edge technology and
+world-class educators provide.</p>
+
+<p class="arrow-btn"><img src="images/arrow-right.png" alt="arrow"/></p>
+
+    </div>
+
+
+  </div>
+  </div>
+</section>
+
+
+
+
+<section class="profile">
+  <div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <h3>Teachers Profile</h3>
+
+      <p class="txt-small">
+        Cascer University’s innova0ve approach to distance learning has made quality educa0on accessible
+for students around the world for more than 25 years. Discover how an Embry-Riddle degree can
+enrich your future today!Embry-Riddle Aeronau0cal University’s innova0ve approach to distance
+learning has made quality educa0on accessible for students around.
+
+      </p>
+    </div>
+
+    <div class="col-md-4">
+      <div class="rt-filt">
+      <span>Filter by</span>
+      <select id="cars">
+  <option value="volvo">Maths</option>
+  <option value="saab">Science</option>
+  <option value="opel">Physics</option>
+</select>
+</div>
+    </div>
+
+
+    <div class="col-md-6">
+       <div class="container">
+         <div class="row crd-shadow">
+           <div class="col-md-4 bg-white p-0">
+             <img src="images/book.jpeg" alt="book" width="200" />
+           </div>
+           <div class="col-md-8 bg-white crd-txt">
+            <h5>Master Polite English</h5>
+            <p>Learn the 3 Golden Rules and 6 Principles of
+Polite Speaking in English. In this course, you will
+learn how to speak politely in English.</p>
+<ul>
+  <li>You need to have an Intermediate level of English.</li>
+</ul>
+
+<p>Created by Dylan Gates</p>
+
+<div class="more-btn">
+<p>Know more</p>
+<img src="images/arrow-right.png" alt="arrow"/>
+</div>
+
+          </div>
+         </div>
+       </div>
+     </div>
+
+     <!--card end-->
+
+     <div class="col-md-6">
+       <div class="container">
+         <div class="row crd-shadow">
+           <div class="col-md-4 bg-white p-0">
+             <img src="images/book.jpeg" alt="book" width="200" />
+           </div>
+           <div class="col-md-8 bg-white crd-txt">
+            <h5>Master Polite English</h5>
+            <p>Learn the 3 Golden Rules and 6 Principles of
+Polite Speaking in English. In this course, you will
+learn how to speak politely in English.</p>
+<ul>
+  <li>You need to have an Intermediate level of English.</li>
+</ul>
+
+<p>Created by Dylan Gates</p>
+
+<div class="more-btn">
+<p>Know more</p>
+<img src="images/arrow-right.png" alt="arrow"/>
+</div>
+
+          </div>
+         </div>
+       </div>
+     </div>
+
+     <!--card end-->
+
+  </div>
+  </div>
+</section>
+
+
+
+<section class="solution">
+  <div class="container">
+    <h3>We are Providing Solutions for</h3>
+  <div class="row">
+    <div class="col-md-4 box-cont">
+      <p class="box-img bg-blue"><img src="images/chat.png" alt="chat" width="28s" /></p>
+      <h5>Global PlaBorms</h5>
+      <p>You can earn an online degree virtually
+anywhere. CuFng-edge technology and
+world-class educators provide.</p>
+    </div>
+
+    <div class="col-md-4 box-cont">
+      <p class="box-img bg-green"><img src="images/chat.png" alt="chat" width="28s" /></p>
+      <h5>Global PlaBorms</h5>
+      <p>You can earn an online degree virtually
+anywhere. CuFng-edge technology and
+world-class educators provide.</p>
+    </div>
+
+
+
+<div class="col-md-4 box-cont">
+      <p class="box-img bg-orange"><img src="images/chat.png" alt="chat" width="28s" /></p>
+      <h5>Global PlaBorms</h5>
+      <p>You can earn an online degree virtually
+anywhere. CuFng-edge technology and
+world-class educators provide.</p>
+    </div>
+
+
+    <div class="col-md-4 box-cont">
+      <p class="box-img bg-sky"><img src="images/chat.png" alt="chat" width="28s" /></p>
+      <h5>Global PlaBorms</h5>
+      <p>You can earn an online degree virtually
+anywhere. CuFng-edge technology and
+world-class educators provide.</p>
+    </div>
+
+
+
+    <div class="col-md-4 box-cont">
+      <p class="box-img bg-yellow"><img src="images/chat.png" alt="chat" width="28s" /></p>
+      <h5>Global PlaBorms</h5>
+      <p>You can earn an online degree virtually
+anywhere. CuFng-edge technology and
+world-class educators provide.</p>
+    </div>
+
+
+  </div>
+  </div>
+</section>
+
+
+
+
+<section class="join">
+  <div class="container">
+    <h3>How to join our platform</h3>
+  <div class="row">
+    <div class="col-md-4">
+      <h5>Register</h5>
+      <p>You can earn an online degree virtually
+anywhere. CuFng-edge technology and
+world-class educators provide.</p>
+    </div>
+
+    <div class="col-md-4">
+      <h5>Enroll</h5>
+      <p>You can earn an online degree virtually
+anywhere. CuFng-edge technology and
+world-class educators provide.</p>
+    </div>
+
+    <div class="col-md-4">
+      <h5>Join</h5>
+      <p>You can earn an online degree virtually
+anywhere. CuFng-edge technology and
+world-class educators provide.</p>
+    </div>
+  </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="more-btn">
+<p>Know more</p>
+<img src="images/arrow-right.png" alt="arrow"/>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- <section class="feed">
+  <div class="container">
+    <h5>Parents about Cascer</h5>
+  <div class="row">
+    <div class="col-12">
+      <div class="grid-container" style="grid-auto-flow: row;">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>
+  <div class="item4">4</div>
+    <div class="item5">5</div>    
+    <div class="item6">6</div>
+</div>
+    </div>
+  </div>
+  </div>
+</section> -->
+
+
+
+
+    <section class="footer-bar">
+      <footer class="page-footer font-small  pt-4">
+
+
+  <div class="container text-center text-md-left ft-link">
+
+   
+    <div class="row">
+
+     
+      <div class="col-md-3">
+
+       
+        <h5>Logo</h5>
+        <p>social media icons</p>
+
+      </div>
+     
+
+      <hr class="clearfix w-100 d-md-none pb-3 divied1"/>
+
+     
+      <div class="col-md-2">
+
+       
+        <h5>News</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">New Class</a>
+          </li>
+          <li>
+            <a href="#!">Privacy</a>
+          </li>
+          <li>
+            <a href="#!">Documentation</a>
+          </li>
+        </ul>
+
+      </div>
+    
+      <div class="col-md-3">
+
+        
+        <h5>Sitemap</h5>
+        
+        <div class="ft-flex">
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">About Us</a>
+          </li>
+          <li>
+            <a href="#!">Courses</a>
+          </li>
+          <li>
+            <a href="#!">News</a>
+          </li>
+          <li>
+            <a href="#!">Event</a>
+          </li>
+          
+        </ul>
+
+        <ul>
+        <li>
+            <a href="#!">Gallery</a>
+          </li>
+          <li>
+            <a href="#!">shop</a>
+          </li>
+          <li>
+            <a href="#!">Teachers</a>
+          </li>
+        </ul>
+       </div>
+
+      </div>
+      
+      <div class="col-md-2">
+
+        
+        <h5>Support</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">FAQS</a>
+          </li>
+          <li>
+            <a href="#!">Privacy</a>
+          </li>
+          <li>
+            <a href="#!">Documentation</a>
+          </li>
+        </ul>
+
+      </div>
+
+
+      <div class="col-md-2">
+
+        
+        <h5>Contact Us</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">143 lorem import</a>
+          </li>
+          <li>
+            <a href="#!">+91123456780</a>
+          </li>
+          <li>
+            <a href="#!">cascer@gmail.com</a>
+          </li>
+        </ul>
+
+      </div>
+
+
+    </div>
+    
+
+  </div>
+  
+
+<div class="container">
+  <div class="row">
+  <div class="col-12">
+    <div class="footer-copyright text-center py-3">©2020. All rights reserved.</div>
+  </div>
+  </div>
+</div>
+
+
+</footer>
+
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
