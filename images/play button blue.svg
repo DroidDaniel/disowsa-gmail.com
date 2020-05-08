@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="74px" height="74px" viewBox="0 0 74 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 18 Copy</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-957.000000, -1376.000000)">
+            <g id="Group-16" transform="translate(120.000000, 1032.000000)">
+                <g id="Bitmap" transform="translate(677.000000, 0.000000)">
+                    <g id="Group-18-Copy" transform="translate(161.000000, 345.000000)">
+                        <path d="M40.0720958,25.7479555 L53.1673884,45.7026871 C53.7734176,46.6261601 53.5160785,47.8660667 52.5926055,48.4720958 C52.2666182,48.6860249 51.8852071,48.8 51.4952926,48.8 L25.3047074,48.8 C24.2001379,48.8 23.3047074,47.9045695 23.3047074,46.8 C23.3047074,46.4100855 23.4186825,46.0286744 23.6326116,45.7026871 L36.7279042,25.7479555 C37.3339333,24.8244825 38.5738399,24.5671434 39.4973129,25.1731726 C39.7262328,25.3234013 39.9218671,25.5190356 40.0720958,25.7479555 Z" id="Triangle" fill="#0094FF" transform="translate(38.400000, 36.000000) rotate(-270.000000) translate(-38.400000, -36.000000) "></path>
+                        <circle id="Oval" stroke="#0094FF" stroke-width="2" cx="36" cy="36" r="36"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
