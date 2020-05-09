@@ -724,7 +724,7 @@ label {
  margin: 0;
 font-size: 18px;;
  padding: 5% 10% 4% 10%;
- font-weight: 700;line-height: 32px;
+ font-weight: 400;line-height: 32px;
 }
 
 .item1 h5{
@@ -738,7 +738,7 @@ font-size: 18px;;
 
 .item1 p{background: #ffd114;
 font-size: 18px;;
-margin: 0;padding: 5% 10% 4% 10%;font-weight: 700;line-height:32px;}
+margin: 0;padding: 5% 10% 4% 10%;font-weight: 400;line-height:32px;}
 
 .feed{
   padding-bottom: 5%;
