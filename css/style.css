@@ -110,6 +110,15 @@ color: #fff;
     line-height: 28px;
 }
 
+.btn-primary{
+  font-weight: 700;
+  padding:2% 8%;
+}
+
+.btn-primary img{
+  margin-left: 20px;
+}
+
 .pcntr{
   padding: 5%;
 }
