@@ -97,7 +97,10 @@ color: #fff;
 
 .carousel-item h1{
  font-weight: 900;
- margin-bottom: 5%;
+    margin-bottom: 5%;
+    font-size: 48px;
+    color: #1d1f22;
+    line-height: 64px;
 }
 
 .carousel-item p{
@@ -895,13 +898,15 @@ footer ul li{
   padding-bottom: 50px;
 }
 
-.mb-menu, .side-nav{
-  display: block;
-}
+
 
 }
 
 @media only screen and (max-width: 800px) {
+
+.mb-menu, .side-nav{
+  display: block;
+}
 
  .navbar ul{
   display: none;
