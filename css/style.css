@@ -7,6 +7,31 @@
   font-family: 'Lato', sans-serif;
 }
 
+
+.search input[type=text] {
+  width: 60px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 30px;
+  background-color: #333333;
+  background-image: url('../images/search-icon.svg');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 5px 10px 5px 12px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  outline: none;
+  color: transparent;
+}
+
+.search input[type=text]:focus {
+  width: 100%;
+  background-image: none;
+  color: #fff;
+}
+
+
 .cred{
       display: flex;
       justify-content: flex-end;
