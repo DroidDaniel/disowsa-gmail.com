@@ -8,6 +8,95 @@
 }
 
 
+.testimonial h5{
+  font-weight: 700;
+  color: #1d1f22;
+}
+
+
+
+.feed .carousel {
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.feed .carousel .item {
+  color: #999;
+  font-size: 14px;
+    text-align: center;
+  overflow: hidden;
+    min-height: 340px;
+}
+.feed .carousel .item a {
+  color: #eb7245;
+}
+.feed .carousel .img-box {
+  width: 145px;
+  height: 145px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.feed .carousel .img-box img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+}
+.feed .carousel .testimonial {  
+  padding: 30px 0 10px;
+}
+.feed .carousel .overview { 
+  text-align: center;
+  padding-bottom: 5px;
+}
+.feed .carousel .overview b {
+  color: #333;
+  font-size: 15px;
+  text-transform: uppercase;
+  display: block; 
+  padding-bottom: 5px;
+}
+.feed .carousel .star-rating i {
+  font-size: 18px;
+  color: #ffdc12;
+}
+.feed .carousel .carousel-control {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+    background: #999;
+    text-shadow: none;
+  top: 4px;
+}
+.feed .carousel-control i {
+  font-size: 20px;
+  margin-right: 2px;
+}
+.feed .carousel-control.left {
+  left: auto;
+  right: 40px;
+}
+.feed .carousel-control.right i {
+  margin-right: -2px;
+}
+
+
+.feed .carousel-item p{
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .search input[type=text] {
   width: 60px;
   box-sizing: border-box;
@@ -82,6 +171,7 @@ margin-left: 0;
     float: left;
     display: inline-block;
     cursor: pointer;
+    border-radius:8px;
 }
 
 .child {
