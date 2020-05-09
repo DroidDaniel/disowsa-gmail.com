@@ -142,7 +142,7 @@ color: #fff;
 
 .navbar ul li{
   list-style-type: none;
-  margin: 0 40px;
+  margin: 0 30px;
 }
 
 .contact-bar ul{
@@ -902,6 +902,11 @@ footer ul li{
 }
 
 @media only screen and (max-width: 800px) {
+
+ .navbar ul{
+  display: none;
+ }
+
   .cred{
   width: 25%;
   float: right;
