@@ -55,17 +55,28 @@ $(document).ready(function(){
   });
 
 $(".opin").click(function(){
-    $(".default").hide();
+    $(".scontryus").hide();
     $(".scontryin").show();
     $(".scontryuk").hide(); 
     $(".flags").slideUp();  
   });
 
 $(".opuk").click(function(){
-    $(".default").hide();
+    $(".scontryus").hide();
     $(".scontryin").hide();
     $(".scontryuk").show();
     $(".flags").slideUp();  
   });
 
+
+$(".opus").click(function(){
+    $(".scontryus").show();
+    $(".scontryin").hide();
+    $(".scontryuk").hide();
+    $(".flags").slideUp();  
+  });
+
 });
+
+
+

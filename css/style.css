@@ -1270,6 +1270,10 @@ footer ul li{
   margin: 0;
 }
 
+.down{
+  margin-left: 15px;
+}
+
 }
 
 @media only screen and (max-width: 800px) {
