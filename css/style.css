@@ -600,13 +600,14 @@ label {
 
 
 .rt-filt select{
-  width: 160px;
-    padding: 10px 10px;
-    border-radius: 10px;
-    border: none;
-    background: none !important;
-    font-weight: 900;
-    border: solid 2px #0a72ef;
+  width: 124px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: none;
+  background: none !important;
+  font-weight: 700;
+  font-size: 16px;
+  border: solid 1px #0a72ef;
 }
 
 .rt-filt select:focus{
