@@ -42,10 +42,30 @@ $(document).ready(function() {
 
 
  $(".btn_cls").click(function() {
-  $(".side-nav").css('left', -300);
+  $(".side-nav").css('left', -350);
  });
 
 
- 
+});
+
+
+$(document).ready(function(){
+  $(".down").click(function(){
+    $(".flags").slideToggle();
+  });
+
+$(".opin").click(function(){
+    $(".default").hide();
+    $(".scontryin").show();
+    $(".scontryuk").hide(); 
+    $(".flags").slideUp();  
+  });
+
+$(".opuk").click(function(){
+    $(".default").hide();
+    $(".scontryin").hide();
+    $(".scontryuk").show();
+    $(".flags").slideUp();  
+  });
 
 });

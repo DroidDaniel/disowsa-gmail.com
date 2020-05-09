@@ -55,10 +55,24 @@
               <a href="tel:+0123456789" class="disp-none font-weight-bold num">+91 999 999 999</a>
               <a href="#" class="disp-none font-weight-bold">Login</a>
               <button type="button" class="btn btn-outline-primary signup_btn disp-none">Sign Up</button>
-              <select id="flags" class="disp-none">
+              <div class="flag-conainer">
+              <img src="images/flag.png" alt="down" class="default" />
+              <p class="scontryin">IN</p>
+              <p class="scontryuk">UK</p>
+
+              <div class="flags">
+                <ul>
+                  <li class="opin">IN</li>
+                  <li class="opuk">UK</li>
+                  <!-- <li>PK </li> -->
+                </ul>
+              </div>
+              </div>
+              <a href="#"><img src="images/arrow-down.svg" alt="down" class="down" /></a>
+              <!-- <select id="flags" class="disp-none">
               <option value="us">US</option>
               <option value="uk">UK</option>
-              </select>
+              </select> -->
               <a href="#" class="dk-none mb-menu"><img src="images/bars.png" alt="bars" width="21"></a>
             </div>
           </div>
@@ -218,7 +232,16 @@ students around the world for more than 25 years. Discover how an
 Embry-Riddle degree can.</p>
     </div>
     <div class="col-md-6 col-sm-12 text-center">
-      <img src="images/poster1.jpg" class="img-fluid" alt="Responsive image" class="poster">
+      <div class="wrapper">
+  <div class="parent" onclick="">
+    <div class="child bg-one">
+
+      <a href="#"><i class="fa fa-play" aria-hidden="true"></i></a>
+      
+    </div>
+  </div>
+
+  </div>
     </div>
   </div>
   </div>
@@ -235,7 +258,7 @@ Embry-Riddle degree can.</p>
 
 <div class="container filter-box">
    <div class="col-md-3 col-sm-12">
-    <div class="floating-label">  
+    <div class="floating-label select"> 
       <select class="floating-select" onclick="this.setAttribute('value', this.value);" value="">
         <optgroup>
         <option value=""></option>
@@ -249,7 +272,7 @@ Embry-Riddle degree can.</p>
    </div>
 
    <div class="col-md-3 col-sm-12">
-    <div class="floating-label">  
+    <div class="floating-label select">  
       <select class="floating-select" onclick="this.setAttribute('value', this.value);" value="">
         <option value=""></option>
         <option value="1">GRADE 08</option>
@@ -262,7 +285,7 @@ Embry-Riddle degree can.</p>
 
 
    <div class="col-md-3 col-sm-12">
-    <div class="floating-label">  
+    <div class="floating-label select">  
       <select class="floating-select" onclick="this.setAttribute('value', this.value);" value="">
         <option value=""></option>
         <option value="1">ENGLISH</option>
@@ -332,7 +355,7 @@ learn how to speak politely in English.</p>
        <div class="container">
          <div class="row crd-shadow bg-white">
            <div class="col-md-12 col-sm-12 col-xl-4  p-0">
-             <img src="images/image01.jpg" alt="book" width="200" class="book img-fluid" />
+             <img src="images/image03.jpg" alt="book" width="200" class="book img-fluid" />
            </div>
            <div class="col-md-12 col-sm-12 col-xl-8  crd-txt">
             <h5>Master Polite English</h5>
@@ -393,7 +416,7 @@ world-class educators provide.</p>
     <!--card--end-->
 
     <div class="col-md-3 col-sm-12 crd-serv">
-      <p><img src="images/illustration01v2.png" alt="pencil" width="180px"></p>
+      <p><img src="images/illustration02v2.png" alt="pencil" width="180px"></p>
       <h5>Tutoring</h5>
       <p>You can earn an online degree virtually
 anywhere. Cutting-edge technology and
@@ -406,7 +429,7 @@ world-class educators provide.</p>
     <!--card--end-->
 
     <div class="col-md-3 col-sm-12 crd-serv">
-      <p><img src="images/illustration01v2.png" alt="pencil" width="180px"></p>
+      <p><img src="images/illustration03v2.png" alt="pencil" width="180px"></p>
       <h5>Classes</h5>
       <p>You can earn an online degree virtually
 anywhere. Cutting-edge technology and
@@ -441,7 +464,7 @@ learning has made quality education accessible for students around.
     </div>
 
     <div class="col-md-4 col-sm-12">
-      <div class="rt-filt">
+      <div class="rt-filt select1">
       <span>Filter by</span>
       <select id="cars">
   <option value="volvo">Maths</option>
@@ -456,7 +479,7 @@ learning has made quality education accessible for students around.
        <div class="container">
          <div class="row crd-shadow mrg-hv">
            <div class="col-md-12 col-sm-12 col-xl-4 p-0">
-             <img src="images/image01.jpg" alt="book" width="200" class="book img-fluid" />
+             <img src="images/image04.jpg" alt="book" width="200" class="book img-fluid" />
            </div>
            <div class="col-md-12 col-sm-12 col-xl-8  crd-txt">
             <h5>Margot Robbie</h5>
@@ -484,7 +507,7 @@ distance learning has made quality.</p>
        <div class="container">
          <div class="row crd-shadow mrg-hv">
            <div class="col-md-12 col-sm-12 col-xl-4 p-0">
-             <img src="images/image01.jpg" alt="book" width="200" class="book img-fluid" />
+             <img src="images/image05.jpg" alt="book" width="200" class="book img-fluid" />
            </div>
            <div class="col-md-12 col-sm-12 col-xl-8 crd-txt">
             <h5>Margot Robbie</h5>
@@ -698,7 +721,7 @@ anywhere. Cutting-edge technology and worldclass educators provide.</p>
     
       </div>
     
-      <div class="col-md-3 col-6 mb-10">
+      <div class="col-md-3 col-3 mb-10">
     
         
         <h5>Sitemap</h5>
@@ -735,7 +758,7 @@ anywhere. Cutting-edge technology and worldclass educators provide.</p>
     
       </div>
       
-      <div class="col-md-2 col-6 mb-10">
+      <div class="col-md-2 col-4 mb-10">
     
         
         <h5>Support</h5>
@@ -755,7 +778,7 @@ anywhere. Cutting-edge technology and worldclass educators provide.</p>
       </div>
     
     
-      <div class="col-md-2 col-6 mb-10">
+      <div class="col-md-2 col-5 mb-10">
     
         
         <h5>Contact Us</h5>
