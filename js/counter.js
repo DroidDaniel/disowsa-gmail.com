@@ -21,7 +21,7 @@ function startCounter() {
         $('.count').each(function () {
             var $this = $(this);
             jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
-                duration: 1000,
+                duration: 500,
                 easing: 'swing',
                 step: function () {
                     $this.text(Math.ceil(this.Counter));
@@ -33,3 +33,19 @@ function startCounter() {
 
 });
 
+$(document).ready(function() {
+ 
+
+ $(".mb-menu").click(function() {
+  $(".side-nav").css('left', 0);
+ });
+
+
+ $(".btn_cls").click(function() {
+  $(".side-nav").css('left', -300);
+ });
+
+
+ 
+
+});

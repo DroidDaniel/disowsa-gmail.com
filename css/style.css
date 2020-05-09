@@ -27,6 +27,34 @@ margin-left: 0;
   display: none;
 }
 
+.side-nav {
+    background: #0d1218;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    z-index: 99;
+    text-align: center;
+    left: -300px;
+  transition: .5s;
+  display: none;
+}
+
+.btn_cls {
+    position: absolute;
+    right: 0;
+    background: #e6eef1;
+    padding: 6px;
+    border-radius: 0 0 0 15px;
+}
+
+.side-nav ul li a{
+color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 3;
+    text-decoration: none;
+}
+
 .nav-link{
   color: #000 !important;
 }
@@ -60,7 +88,7 @@ margin-left: 0;
     width: 12%;
     margin: 0;
     bottom: 0px;
-    /* background: red; */
+    left: 2%;
 }
 
 .carousel-indicators .active{
@@ -68,7 +96,8 @@ margin-left: 0;
 }
 
 .carousel-indicators li{
-  width: 24px;
+  width: 22px;
+  height: 2px;
   background-color: #ccc;
   border-radius: 100px;
 }
@@ -246,7 +275,7 @@ iframe{
 }
 
 .course h3{
-  font-size: 32px;
+  font-size: 30px;
   padding: 100px 0 25px 0;
   font-weight: 900;
 }
@@ -439,7 +468,7 @@ label {
 }
 
 .service h3{
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 900;
   margin-bottom: 100px;
 }
@@ -454,7 +483,7 @@ label {
 }
 
 .crd-serv h5{
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 900;
   margin: 25px 0;
 }
@@ -462,7 +491,7 @@ label {
 .crd-serv p{
   color: #7a7a7a;
   line-height: 1.8;
-  font-size: 17px;
+  font-size: 16px;
   margin: 25px 0;
 }
 
@@ -499,7 +528,7 @@ label {
 }
 
 .txt-small{
-  font-size: 19px;
+  font-size: 18px;
   line-height: 1.8;
   color: #7a7a7a;
   margin-bottom: 100px;
@@ -582,13 +611,13 @@ label {
 }
 
 .box-cont h5{
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 900;
   margin: 25px 0;
 }
 
 .box-cont p{
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.8;
   color: #7a7a7a;
 }
@@ -605,13 +634,13 @@ label {
 }
 
 .join h5{
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 900;
   margin: 25px 0;
 }
 
 .join p{
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.8;
   color: #7a7a7a;
 }
@@ -727,7 +756,9 @@ footer ul li a:hover{
   margin-bottom: 50px;
 }
 
-
+.sicon a{
+  margin-right: 15px;
+}
 
 
 @media only screen and (max-width: 600px) {
@@ -837,6 +868,10 @@ footer ul li{
 
 .join{
   padding-bottom: 50px;
+}
+
+.mb-menu, .side-nav{
+  display: block;
 }
 
 }
