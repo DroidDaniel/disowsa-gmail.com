@@ -8,15 +8,6 @@
 }
 
 
-.item3{
-    width: 330px;
-  }
-
-  .item5{
-    width: 272px;
-  }
-
-
 .search input[type=text] {
   width: 60px;
   box-sizing: border-box;
@@ -725,20 +716,29 @@ label {
   font-weight: 900;
   margin: 4% 0 0 0;
   padding: 4% 0 2% 10%;
+  font-size: 24px;
+  font-weight: 900;
 }
 
 .blue p{
- margin: 0;padding: 5% 10% 4% 10%;font-weight: 700;line-height: 1.5;
+ margin: 0;
+font-size: 18px;;
+ padding: 5% 10% 4% 10%;
+ font-weight: 700;line-height: 32px;
 }
 
 .item1 h5{
+  font-size: 24px;
+  font-weight: 900;
   background: #ffd114;
   font-weight: 900;
-  margin: 9% 0 0 0;
+  margin: 4% 0 0 0;
   padding: 4% 0 2% 10%;
 }
 
-.item1 p{background: #ffd114;margin: 0;padding: 5% 10% 18% 10%;font-weight: 700;line-height: 1.5;}
+.item1 p{background: #ffd114;
+font-size: 18px;;
+margin: 0;padding: 5% 10% 4% 10%;font-weight: 700;line-height:32px;}
 
 .feed{
   padding-bottom: 5%;
@@ -754,7 +754,7 @@ label {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
-  grid-gap: 40px;
+  grid-gap: 10px;
 }
 
 .grid-container > div {
@@ -960,8 +960,6 @@ footer ul li{
   .navbar ul,.contact-bar ul,.ft-flex,.filter-box{
     flex-direction: column;
   }
-
-
 
   .crd-serv{
     margin:20px 20px;
