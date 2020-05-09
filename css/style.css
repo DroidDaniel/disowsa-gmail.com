@@ -598,9 +598,31 @@ label {
   outline: none;
 }
 
+.bul-num-cont{
+  position: relative;
+}
+
+.rom-num{
+      font-size: 70px;
+    font-weight: 900;
+    color: #eef1fe;
+}
+
+.bul-num-cont h3{
+position: absolute;
+    bottom: 0;
+    top: 32px;
+    left: 18px;
+    color: #1d1f22;
+}
+
 .mrg-hv{
   background-color: #fff;
   transition: .3s;
+}
+
+.mrg-hv p:nth-child(4){
+  font-weight: 400;
 }
 
 .mrg-hv:hover{
@@ -935,7 +957,9 @@ footer ul li{
   padding-bottom: 50px;
 }
 
-
+.rom-num{
+  font-size: 62px;
+}
 
 }
 
