@@ -136,13 +136,13 @@ color: #fff;
 .navbar ul li a{
   text-decoration: none;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 400;
   color: #000;
 }
 
 .navbar ul li{
   list-style-type: none;
-  margin: 0 20px;
+  margin: 0 40px;
 }
 
 .contact-bar ul{
