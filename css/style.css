@@ -522,26 +522,27 @@ label {
   text-align: center;
   padding: 10px 20px;
   border-radius: 5px;
-  border: solid 2px #e0e0e0;
+  border: solid 2px #dde1e7;
   transition: .3s;
   margin: 0 0 0 60px;
 }
 
 .crd-serv h5{
-  font-size: 22px;
-  font-weight: 900;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1d1f22;
   margin: 25px 0;
 }
 
 .crd-serv p{
-  color: #7a7a7a;
-  line-height: 1.8;
-  font-size: 16px;
-  margin: 25px 0;
+     color: #7c7c7c;
+    line-height: 32px;
+    font-size: 18px;
+    margin: 25px 0;
 }
 
 .crd-serv:hover{
- border: solid 2px #9ec1dd;
+ border: solid 2px #0094ff;
  box-shadow: -8px 2px 10px #908c8c42;
 }
 
@@ -557,7 +558,7 @@ label {
 .crd-serv:hover>.arrow-btn{
   background: #0095fc;
     border:solid 1px transparent;
-   color: #fff;
+   color: #333333;
 }
 
 
