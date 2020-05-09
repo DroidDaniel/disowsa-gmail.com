@@ -451,7 +451,7 @@ label {
 
 
 .crd-txt{
-  padding: 40px 40px 40px 33px;
+  padding: 27px 40px 13px 33px;
 }
 
 .crd-txt h5{
@@ -596,6 +596,14 @@ label {
 
 #flags:focus{
   outline: none;
+}
+
+.mrg-hv{
+  background-color: #fff;
+}
+
+.mrg-hv:hover{
+  background-color: #eff2fe !important;
 }
 
 
