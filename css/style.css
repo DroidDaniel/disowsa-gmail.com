@@ -381,7 +381,7 @@ label {
 
 
 .crd-txt{
-  padding: 40px 0 0 33px;
+  padding: 40px 0 40px 33px;
 }
 
 .crd-txt h5{
@@ -514,15 +514,28 @@ label {
   margin-right: 20px;
 }
 
+#flags{
+  border: solid 2px #0094fe;
+    border-radius: 5px;
+}
+
+#flags:focus{
+  outline: none;
+}
+
 
 .rt-filt select{
   width: 160px;
     padding: 10px 10px;
     border-radius: 10px;
     border: none;
-    background-color: none;
+    background: none !important;
     font-weight: 900;
-    border: solid 1px #0a72ef;
+    border: solid 2px #0a72ef;
+}
+
+.rt-filt select:focus{
+  outline: none;
 }
 
 
@@ -736,10 +749,95 @@ display: none;
 }
 
 .mb-10{
-  margin-bottom: 10%;
+  margin-bottom: 10%; 
+}
+
+.banner{
+  padding-top: 0;
+}
+
+.wedo,.service,.profile,.solution{
+  padding: 50px 0;
+}
+
+.wedo h5,.course h3,.service h3,.profile h3,.solution h3,.join h3,.feed h3{
+  font-size: 23px;
+}
+
+.solution h3{
+  margin-bottom: 45px;
+}
+
+.join h3{
+  margin-bottom: 20px;
+}
+
+.crd-serv h5,.box-cont h5,.join h5,.item1 h5,.blue h5{
+  font-size: 18px;
+}
+
+.box-cont h5,.join h5{
+  margin: 13px 0;
+}
+
+.blue h5,.item1 h5{
+  padding-top: 50px;
 }
 
 
+
+
+.wedo p,.item1 p,.blue p{
+  font-size: 15px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+footer h5{
+  font-size: 14px;
+}
+
+footer ul li{
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.txt-small{
+  font-size: 15px;
+  padding-top: 0;
+  margin-bottom: 20px;
+}
+.course h3{
+  padding-top: 50px;
+}
+
+.service h3,.profile h3,.feed h3{
+  margin-bottom: 20px;
+}
+
+.crd-serv p{
+  margin:10px 0;
+}
+
+.box-cont{
+  margin-bottom: 25px;
+}
+
+.box-cont p,.join p{
+  font-size: 14px;
+}
+
+.crd-serv p:nth-child(1){
+  font-size: 12px;
+}
+
+.crd-serv .arrow-btn{
+  margin: 25px auto !important;
+}
+
+.join{
+  padding-bottom: 50px;
+}
 
 }
 
