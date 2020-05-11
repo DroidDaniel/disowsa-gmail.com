@@ -158,18 +158,22 @@ nav > .nav.nav-tabs{
 }
 
 .nav-tabs .nav-link{
-  border: none;
   border-radius: 0;
+  background:url(../images/line.jpg) right center no-repeat;
+}
+
+.nav-tabs .nav-link:nth-last-child(1){
+  background-image: none;
 }
 
 .navbar nav > div a.nav-item.nav-link,
 nav > div a.nav-item.nav-link.active
 {
-  border: none;
-    padding: 15px 25px;
-    color:#fff !important;
-    background:#0094fe;
-    border-radius:0;
+  /* border: none; */
+  padding: 15px 25px;
+  color:#fff !important;
+  background:#0094fe;
+  border-radius:0;
 }
 
 .navbar nav > div a.nav-item.nav-link.active:after
@@ -193,11 +197,11 @@ nav > div a.nav-item.nav-link.active
 nav > div a.nav-item.nav-link:hover,
 nav > div a.nav-item.nav-link:focus
 {
-  border: none;
-    background: #0094fe;
-    color:#fff !important;
-    border-radius:0;
-    transition:background 0.20s linear;
+  /* border: none; */
+  background: #0094fe;
+  color:#fff !important;
+  border-radius:0;
+  transition:background 0.20s linear;
 }
 
 
@@ -441,7 +445,7 @@ color: #0094ff;
 }
 
 .select:after {
-  content: "▼";
+  content: "â–¼";
   padding: 12px 8px;
   position: absolute;
   right: 10px;
@@ -455,7 +459,7 @@ color: #0094ff;
 
 
 .select1:after {
-  content: "▼";
+  content: "â–¼";
   padding: 12px 8px;
   position: absolute;
   right: 10px;
@@ -1425,6 +1429,8 @@ footer ul li a:hover{
 .sicon a{
   margin-right: 15px;
 }
+
+
 
 
 @media only screen and (max-width: 600px) {
