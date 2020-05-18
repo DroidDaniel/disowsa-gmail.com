@@ -1,4 +1,4 @@
-/*
+
 var animation = bodymovin.loadAnimation({
 container: document.getElementById('deliveryAnimation'),
     
@@ -10,7 +10,7 @@ path: 'banneranimation.json'
     
 
 })
-*/
+
 
 
 var animation1 = bodymovin.loadAnimation({
