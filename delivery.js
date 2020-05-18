@@ -6,7 +6,7 @@ container: document.getElementById('deliveryAnimation'),
 renderer: 'svg',
 loop: true,
 autoplay: true,
-path: 'delivery_van.json'
+path: 'church.json'
     
 // Make sure your path has the same filename as your animated     SVG's JSON file //
 })
