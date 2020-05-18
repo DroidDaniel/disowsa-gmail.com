@@ -6,7 +6,7 @@ container: document.getElementById('deliveryAnimation'),
 renderer: 'svg',
 loop: true,
 autoplay: true,
-path: 'banneranimation.json'
+path: './js/banneranimation.json'
     
 
 })
@@ -20,7 +20,7 @@ container: document.getElementById('deliveryAnimation1'),
 renderer: 'svg',
 loop: true,
 autoplay: true,
-path: 'banneranimation1.json'
+path: './js/banneranimation1.json'
     
 // Make sure your path has the same filename as your animated     SVG's JSON file //
 })
