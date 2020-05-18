@@ -1,6 +1,6 @@
 
 var animation = bodymovin.loadAnimation({
-container: document.getElementsByClassName('deliveryAnimation'),
+container: document.getElementById('deliveryAnimation'),
     
 // Set your ID to something that you'll associate with the animation you're using //
 renderer: 'svg',
