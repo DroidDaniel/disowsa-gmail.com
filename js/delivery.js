@@ -1,26 +1,40 @@
 
-var animation = bodymovin.loadAnimation({
-container: document.getElementById('deliveryAnimation'),
+var animation1 = bodymovin.loadAnimation({
+container: document.getElementById('deliveryAnimation1'),
     
 
 renderer: 'svg',
 loop: true,
 autoplay: true,
-path: './js/banneranimation.json'
+path: './js/slide1.json'
     
 
 })
 
 
 
-var animation1 = bodymovin.loadAnimation({
-container: document.getElementById('deliveryAnimation1'),
+var animation2 = bodymovin.loadAnimation({
+container: document.getElementById('deliveryAnimation2'),
     
-// Set your ID to something that you'll associate with the animation you're using //
+
 renderer: 'svg',
 loop: true,
 autoplay: true,
-path: './js/banneranimation1.json'
+path: './js/slide2.json'
     
-// Make sure your path has the same filename as your animated     SVG's JSON file //
+
+})
+
+
+
+var animation3 = bodymovin.loadAnimation({
+container: document.getElementById('deliveryAnimation3'),
+    
+
+renderer: 'svg',
+loop: true,
+autoplay: true,
+path: './js/slide3.json'
+    
+
 })
