@@ -218,32 +218,43 @@
 	<script type="text/javascript">
 		var ctx = document.getElementById('linechart').getContext('2d');
 	
+var gradientpurple = ctx.createLinearGradient(0, 0, 0, 450);
+gradientpurple.addColorStop(0, 'rgba(105,100,243,1)');
+gradientpurple.addColorStop(0.5, 'rgba(234,233,253,0.43)');
+gradientpurple.addColorStop(1, 'rgba(255,255,255,0.43)');
+
+var gradient = ctx.createLinearGradient(0, 0, 0, 450);
+gradient.addColorStop(0, 'rgba(85,216,254,1)');
+gradient.addColorStop(0.5, 'rgba(231,249,255,0.43)');
+gradient.addColorStop(1, 'rgba(255,255,255,0.43)');
+
+
 	  var dataFirst = {
 	    label: "Product Sold",
-	    data: [15, 18, 15, 12, 40, 15],
+	    data: [15, 10, 15, 18, 15, 20],
 	    pointStyle:'circle',
 	    pointBorderWidth:3,
 	    lineTension: 0.4,
 	    fill: true,
 	    borderColor: '#a5a3fb',
-	    /*backgroundColor:'rgb(201, 230, 255)'*/
+	    backgroundColor:gradientpurple
 	  };
 	
 	var dataSecond = {
 	    label: "Total Views",
-	    data: [25, 5, 35, 25, 20, 35],
+	    data: [18, 15, 17, 13, 17, 15],
 	    pointStyle:'circle',
 	    pointBorderWidth:3,
 	    lineTension: 0.4,
 	    fill: true,
 	  borderColor: '#65dbff',
-	    /*backgroundColor:'rgb(176, 176, 226)'*/
+	    backgroundColor:gradient
 	
 	  };
 	
 	var speedData = {
 	  labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
-	  datasets: [dataFirst, dataSecond]
+	  datasets: [dataFirst, dataSecond],
 	};
 	
 	var chart = new Chart(ctx, {
