@@ -1,390 +1,371 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+	<title>mitsogo</title>
+</head>
 
-    <title>mitsogo</title>
-  </head>
-  <body>
-
-
-
-<div id="mySidenav" class="sidenav">
+<body>
+	<div id="mySidenav" class="sidenav">
 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-<p>IMPEKABLE</p>
-
-    <div class="menu-flexhm">
-	<div class="hm"></div>
-	<a href="">home</a>
-	</div>
-
-	<div class="menu-flexds">
-	<div class="ds"></div>
-	<a href="">Dashboard</a>
-	</div>
-
-	<div class="menu-flexin">
-	<div class="in"></div>
-	<a href="">Inbox</a>
-	<span>new</span>
-	</div>
-
-	<div class="menu-flexpr">
-	<div class="pr"></div>
-	<a href="">Products</a>
-	</div>
-
-</div>
-
-<div id="main">
-  
-  <nav>
-  	<div class="links">
-  	<span onclick="openNav()">menu</span>
-            
-                <a href="#" class="search-icon">gg</a>
-
-               <input type="text" placeholder="Search transactions, invoices or help" class="searchbox">
-            </div>
-
-            <div class="profile">
-    
-                <a href="#" class="bell"></a>
-                <a href="#">john doe</a>
-                <a href="#" class="down"></a>
-                <a href="#"><img src="images/LavidEmes.png" class="avatar"></a>
-            </div>
-        </nav>
-
-
-
-<div class="main-detail">
-
-<header>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-	<p>Overview</p>
-			</div>
-			<div class="col-md-6">
-	<button type="button" class="btn-add">Primary</butto><span class="add-ico">gg</span>
-			</div>
-
+		<p>IMPEKABLE</p>
+		<div class="menu-flexhm">
+			<div class="hm"></div>	<a href="">home</a>
+		</div>
+		<div class="menu-flexds">
+			<div class="ds"></div>	<a href="">Dashboard</a>
+		</div>
+		<div class="menu-flexin">
+			<div class="in"></div>	<a href="">Inbox</a>
+			<span>new</span>
+		</div>
+		<div class="menu-flexpr">
+			<div class="pr"></div>	<a href="">Products</a>
 		</div>
 	</div>
-</header>
-
-
-<div class="container">
-
-	<div class="row">
-		<div class="col-md-8">
-			<div class="row">
-  <div class="col-sm-6">
-    <div class="card cus-ht">
-      <div class="card-body">
-
-      	<div class="chart-title">
-      	<p>Statistics</p>
-      	<select name="cars" id="cars">
-    <option value="volvo">Last 6 montds</option>
-    <option value="saab">Last 3 montds</option>
-    <option value="opel">Last 4 montds</option>
-    <option value="audi">Last 5 montds</option>
-  </select>
-      	</div>
-
-        <canvas id="linechart"></canvas>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6">
-    <div class="card cus-ht">
-      <div class="card-body">
-      	<div class="chart-title">
-      	<p>Sales Distribution</p>
-      </div>
-        <canvas id="roundchart"></canvas>
-        
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!--table-->
-
-
+	<div id="main">
+		<nav>
+			<div class="links">	<span onclick="openNav()">menu</span>
+				<a href="#" class="search-icon">gg</a>
+				<input type="text" placeholder="Search transactions, invoices or help" class="searchbox">
+			</div>
+			<div class="profile">
+				<a href="#" class="bell"></a> <a href="#">john doe</a>
+				<a href="#" class="down"></a>
+				<a href="#">
+					<img src="images/LavidEmes.png" class="avatar">
+				</a>
+			</div>
+		</nav>
+		<div class="main-detail">
+			<header>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<p>Overview</p>
+						</div>
+						<div class="col-md-6">
+							<button type="button" class="btn-add">Primary</butto><span class="add-ico">gg</span>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="card cus-ht">
+									<div class="card-body">
+										<div class="chart-title">
+											<p>Statistics</p>
+											<select name="cars" id="cars">
+												<option value="volvo">Last 6 montds</option>
+												<option value="saab">Last 3 montds</option>
+												<option value="opel">Last 4 montds</option>
+												<option value="audi">Last 5 montds</option>
+											</select>
+										</div>
+										<canvas id="linechart"></canvas>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="card cus-ht">
+									<div class="card-body">
+										<div class="chart-title">
+											<p>Sales Distribution</p>
+										</div>
+										<canvas id="roundchart"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--table-->
+						<div class="card tabcnt table-responsive">
+							<div class="card-body">
+								<p>Referrer</p>
+								<table class="table borderless">
+									<tbody>
+										<tr class="gray-bg">
+											<td>LOCATION</td>
+											<td>VIEWS</td>
+											<td>SALES</td>
+											<td>CONVERSION</td>
+											<td>TOTAL</td>
+										</tr>
+										<tr>
+											<td>google.com</td>
+											<td>3746</td>
+											<td>752</td>
+											<td>43%</td>
+											<td>$19,291</td>
+										</tr>
+										<tr>
+											<td>facebook.com</td>
+											<td>8126</td>
+											<td>728</td>
+											<td>32%</td>
+											<td>$17,638</td>
+										</tr>
+										<tr>
+											<td>twitter.com</td>
+											<td>8836</td>
+											<td>694</td>
+											<td>28%</td>
+											<td>$16,218</td>
+										</tr>
+										<tr>
+											<td>Direct,email,IM</td>
+											<td>1173</td>
+											<td>645</td>
+											<td>24%</td>
+											<td>$14,421</td>
+										</tr>
+										<tr>
+											<td>linkedin.com</td>
+											<td>2739</td>
+											<td>539</td>
+											<td>20%</td>
+											<td>$12,370</td>
+										</tr>
+									</tbody>
+								</table>	<a href="#">Show More</a>
+							</div>
+						</div>
+					</div>
+					<!--right side-->
+					<div class="col-md-4">
+						<div class="row">
+							<div class="col-md-12 pink">
+								<div class="avt">
+									<div class="proimg"></div>
+									<h6>Nick Herasimenka</h6>
+									<p>United states</p>
+									<div class="smedia">
+										<div class="insta"></div>
+										<div class="tw"></div>
+										<div class="fb"></div>
+										<div class="email"></div>
+									</div>
+								</div>
+								<div class="our">
+									<div class="pro-menu">
+										<p>Our Users</p>	<span>gggg</span>	
+									</div>
+									<div class="userflex">
+										<img src="images/drew.png">
+										<div class="uname">
+											<h5>Drew James</h5>
+											<p>United States <span>mobile : 871.567.4877</span>
+											</p>
+										</div>
+									</div>
+									<div class="userflex">
+										<img src="images/Bavidkames.png">
+										<div class="userico2"></div>
+										<div class="uname">
+											<h5>Bavidkames</h5>
+											<p>United States <span>mobile : 871.567.4877</span>
+											</p>
+										</div>
+									</div>
+									<div class="userflex">
+										<img src="images/LavidEmes.png">
+										<div class="uname">
+											<h5>Lavid Emes</h5>
+											<p>United States <span>mobile : 871.567.4877</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 blue">
+								<div class="vid-menu">
+									<p>Product Video</p>	<span>gggg</span>	
+								</div>
+								<div class="videobox">
+									<a href="https://www.youtube.com/watch?v=Oy6hk6Y7VHQ&feature=youtu.be" target="_blank">
+										<div id="playicon">
+											<div class="plyimg"></div>
+										</div>
+									</a>
+									<img src="images/Videotumbnail.png" width="100%">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, tden Popper.js, tden Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	<script type="text/javascript">
+		var ctx = document.getElementById('linechart').getContext('2d');
 	
-    <div class="card tabcnt table-responsive">
-      <div class="card-body">
-        <p>Referrer</p>
+	  var dataFirst = {
+	    label: "Product Sold",
+	    data: [15, 18, 15, 12, 40, 15],
+	    pointStyle:'circle',
+	    pointBorderWidth:3,
+	    lineTension: 0.4,
+	    fill: true,
+	    borderColor: '#a5a3fb',
+	    /*backgroundColor:'rgb(201, 230, 255)'*/
+	  };
+	
+	var dataSecond = {
+	    label: "Total Views",
+	    data: [25, 5, 35, 25, 20, 35],
+	    pointStyle:'circle',
+	    pointBorderWidth:3,
+	    lineTension: 0.4,
+	    fill: true,
+	  borderColor: '#65dbff',
+	    /*backgroundColor:'rgb(176, 176, 226)'*/
+	
+	  };
+	
+	var speedData = {
+	  labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+	  datasets: [dataFirst, dataSecond]
+	};
+	
+	var chart = new Chart(ctx, {
+	    // tde type of chart we want to create
+	    type: 'line',
+	    // tde data for our dataset
+	    data: speedData,
+	    // Configuration options go here
+	    options: {
+	   
+	    	legend: {
+	            display: true,
+	            position: 'bottom',
+	            fullWidth:true,
+	
+	
+	            labels: {
+	                fontColor: '#000',
+	                boxWidth:20,
+	               
+	            }
+	        },
+	    	responsive: true,
+	    maintainAspectRatio: false,
+	    scales: {
+	    	xAxes: [{
+	            gridLines: {
+	                        drawBorder: true,
+	                        display: true,
+	
+	        color: '#F9FAF8'
+	                    }
+	        }],
+	
+	        yAxes: [{
+	        	gridLines: {
+	                        drawBorder: true,
+	                        display: true,
+	
+	        color: '#F9FAF8'
+	                    },
+	            ticks: {
+	
+	            	 callback: function(value, index, values) {
+	                        return '$' + value+'k';
+	                    },
+	
+	                beginAtZero:false,
+	
+	            }
+	        }]
+	    }
+	    }
+	});
+	
+	
+	
+	var ctx = document.getElementById('roundchart').getContext('2d');
+	
+	var chart = new Chart(ctx, {
+	    // tde type of chart we want to create
+	    type: 'doughnut',
+	
+	    // tde data for our dataset
+	    data: {
+	        labels: ['France', 'Italy', 'German', 'Japan'],
+	        datasets: [{ 
+	            backgroundColor: ["#55d8fe","#ff8373","#ffda83","#a3a0fb",],
+	            borderwidth: 0,
+	            data: [6, 5, 3, 4]
+	        }]
+	    },
+	
+	    // Configuration options go here
+	    options: {
+	 
+	 elements: {
+	      arc: {
+	          borderWidth: 0
+	      }
+	  },
+	    	legend: {
+	            display: true,
+	            position: 'bottom',
+	            labels: {
+	                fontColor: '#000',
+	                boxWidth:20
+	
+	                
+	            }
+	        },
+	
+	    	responsive: true,
+	    maintainAspectRatio: false,
+	    scales: {
+	    	xAxes: [{
+	        	display:true,
+	        	gridLines: {
+	                        drawBorder: true,
+	                        display: false,
+	                    },
+	            ticks: {
+	            	display:false,
+	                beginAtZero:false
+	            }
+	        }],
+	
+	        yAxes: [{
+	        	display:false,
+	        	gridLines: {
+	                        drawBorder: true,
+	                        display: false,
+	                    },
+	            ticks: {
+	            	display:false,
+	                beginAtZero:true
+	            }
+	        }]
+	    }
+	    }
+	});
+	</script>
+</body>
 
-					<table class="table borderless">
-   
-    <tbody>
-
-      <tr class="gray-bg">
-        <td>LOCATION</td>
-        <td>VIEWS</td>
-        <td>SALES</td>
-        <td>CONVERSION</td>
-        <td>TOTAL</td>
-      </tr>
-
-      <tr>
-        <td>google.com</td>
-        <td>3746</td>
-        <td>752</td>
-        <td>43%</td>
-        <td>$19,291</td>
-      </tr>
-
-      <tr>
-        <td>facebook.com</td>
-        <td>8126</td>
-        <td>728</td>
-        <td>32%</td>
-        <td>$17,638</td>
-      </tr>
-      <tr>
-        <td>twitter.com</td>
-        <td>8836</td>
-        <td>694</td>
-        <td>28%</td>
-        <td>$16,218</td>
-      </tr>
-
-          <tr>
-        <td>Direct,email,IM</td>
-        <td>1173</td>
-        <td>645</td>
-        <td>24%</td>
-        <td>$14,421</td>
-      </tr>
-
-
-          <tr>
-        <td>linkedin.com</td>
-        <td>2739</td>
-        <td>539</td>
-        <td>20%</td>
-        <td>$12,370</td>
-      </tr>
-    </tbody>
-  </table>
-
-					<a href="#">Show More</a>
-
-      </div>
-    </div>
-
-
-
-			
-		</div>
-
-<!--right side-->
-
-		<div class="col-md-4">
-			<div class="row">
-				<div class="col-md-12 pink">
-					<div class="avt">
-						<div class="proimg"></div>
-						<h6>Nick Herasimenka</h6>
-						<p>United states</p>
-                       
-                     <div class="smedia">
-                     	<div class="insta"></div>
-                     	<div class="tw"></div>
-                     	<div class="fb"></div>
-                     	<div class="email"></div>
-                     </div>
-
-					</div>
-
-                  <div class="our">
-                  	<div class="pro-menu">
-					<p>Our Users</p>
-					<span>gggg</span>	
-					</div>
-
-					<div class="userflex">
-						<img src="images/drew.png">
-						<div class="uname">
-							<h5>Drew James</h5>
-							<p>United States <span>mobile : 871.567.4877</span></p>
-						</div>
-					</div>
-
-					<div class="userflex">
-						<img src="images/Bavidkames.png">
-						<div class="userico2"></div>
-						<div class="uname">
-							<h5>Bavidkames</h5>
-							<p>United States <span>mobile : 871.567.4877</span></p>
-						</div>
-					</div>
-
-
-					<div class="userflex">
-						<img src="images/LavidEmes.png">
-						<div class="uname">
-							<h5>Lavid Emes</h5>
-							<p>United States <span>mobile : 871.567.4877</span></p>
-						</div>
-					</div>
-                  </div>
-
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-12 blue">
-					<div class="vid-menu">
-					<p>Product Video</p>
-					<span>gggg</span>	
-					</div>
-
-<div class="videobox">
-	<a href="https://www.youtube.com/watch?v=Oy6hk6Y7VHQ&feature=youtu.be" target="_blank">
-	<div id="playicon">
-		<div class="plyimg"></div>
-	</div>
-</a>
-<img src="images/Videotumbnail.png" width="100%">
-</div>
-
-				</div>
-			</div>
-
-		</div>		
-	</div>
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-</div>
-
-    
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, tden Popper.js, tden Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <script type="text/javascript">
-    	var ctx = document.getElementById('linechart').getContext('2d');
-
-    	var dataFirst = {
-    label: "Car A - Speed (mph)",
-    data: [0, 10, 15, 12, 30, 30, 15],
-    lineTension: 0,
-    fill: true,
-    borderColor: '#a5a3fb',
-    backgroundColor:'rgb(201, 230, 255)'
-  };
-
-var dataSecond = {
-    label: "Car B - Speed (mph)",
-    data: [15, 10, 5, 2, 20, 30, 45],
-    lineTension: 0,
-    fill: true,
-  borderColor: '#65dbff',
-    backgroundColor:'rgb(176, 176, 226)'
-
-  };
-
-var speedData = {
-  labels: ["0s", "10s", "20s", "30s", "40s", "50s", "60s"],
-  datasets: [dataFirst, dataSecond]
-};
-
-var chart = new Chart(ctx, {
-    // tde type of chart we want to create
-    type: 'line',
-
-    // tde data for our dataset
-    data: speedData,
-    // Configuration options go here
-    options: {
-    	legend: {
-            display: true,
-            position: 'bottom',
-            labels: {
-                fontColor: 'rgb(255, 99, 132)'
-            }
-        },
-    	responsive: true,
-    maintainAspectRatio: false,
-    scales: {
-        yAxes: [{
-            ticks: {
-                beginAtZero:true
-            }
-        }]
-    }
-    }
-});
-
-
-
-var ctx = document.getElementById('roundchart').getContext('2d');
-
-var chart = new Chart(ctx, {
-    // tde type of chart we want to create
-    type: 'doughnut',
-
-    // tde data for our dataset
-    data: {
-        labels: ['France', 'Italy', 'German', 'Japan'],
-        datasets: [{ 
-            backgroundColor: ["#55d8fe","#ff8373","#ffda83","#a3a0fb",],
-            borderwidth: 0,
-            data: [6, 5, 3, 4]
-        }]
-    },
-
-    // Configuration options go here
-    options: {
-    	legend: {
-            display: true,
-            position: 'bottom',
-            labels: {
-                fontColor: 'rgb(255, 99, 132)',
-                
-            }
-        },
-
-    	responsive: true,
-    maintainAspectRatio: false,
-    scales: {
-        yAxes: [{
-            ticks: {
-                beginAtZero:true
-            }
-        }]
-    }
-    }
-});
-    </script>
-  </body>
 </html>
