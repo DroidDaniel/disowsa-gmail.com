@@ -1,382 +1,228 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-	<title>mitsogo</title>
-</head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-<body>
-	<div id="mySidenav" class="sidenav">
-<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<p>IMPEKABLE</p>
-		<div class="menu-flexhm">
-			<div class="hm"></div>	<a href="">home</a>
-		</div>
-		<div class="menu-flexds">
-			<div class="ds"></div>	<a href="">Dashboard</a>
-		</div>
-		<div class="menu-flexin">
-			<div class="in"></div>	<a href="">Inbox</a>
-			<span>new</span>
-		</div>
-		<div class="menu-flexpr">
-			<div class="pr"></div>	<a href="">Products</a>
-		</div>
-	</div>
-	<div id="main">
-		<nav>
-			<div class="links">	<span onclick="openNav()">menu</span>
-				<a href="#" class="search-icon">gg</a>
-				<input type="text" placeholder="Search transactions, invoices or help" class="searchbox">
-			</div>
-			<div class="profile">
-				<a href="#" class="bell"></a> <a href="#">john doe</a>
-				<a href="#" class="down"></a>
-				<a href="#">
-					<img src="images/LavidEmes.png" class="avatar">
-				</a>
-			</div>
-		</nav>
-		<div class="main-detail">
-			<header>
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6">
-							<p>Overview</p>
-						</div>
-						<div class="col-md-6">
-							<button type="button" class="btn-add">Primary</butto><span class="add-ico">gg</span>
-						</div>
-					</div>
-				</div>
-			</header>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8">
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="card cus-ht">
-									<div class="card-body">
-										<div class="chart-title">
-											<p>Statistics</p>
-											<select name="cars" id="cars">
-												<option value="volvo">Last 6 montds</option>
-												<option value="saab">Last 3 montds</option>
-												<option value="opel">Last 4 montds</option>
-												<option value="audi">Last 5 montds</option>
-											</select>
-										</div>
-										<canvas id="linechart"></canvas>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="card cus-ht">
-									<div class="card-body">
-										<div class="chart-title">
-											<p>Sales Distribution</p>
-										</div>
-										<canvas id="roundchart"></canvas>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!--table-->
-						<div class="card tabcnt table-responsive">
-							<div class="card-body">
-								<p>Referrer</p>
-								<table class="table borderless">
-									<tbody>
-										<tr class="gray-bg">
-											<td>LOCATION</td>
-											<td>VIEWS</td>
-											<td>SALES</td>
-											<td>CONVERSION</td>
-											<td>TOTAL</td>
-										</tr>
-										<tr>
-											<td>google.com</td>
-											<td>3746</td>
-											<td>752</td>
-											<td>43%</td>
-											<td>$19,291</td>
-										</tr>
-										<tr>
-											<td>facebook.com</td>
-											<td>8126</td>
-											<td>728</td>
-											<td>32%</td>
-											<td>$17,638</td>
-										</tr>
-										<tr>
-											<td>twitter.com</td>
-											<td>8836</td>
-											<td>694</td>
-											<td>28%</td>
-											<td>$16,218</td>
-										</tr>
-										<tr>
-											<td>Direct,email,IM</td>
-											<td>1173</td>
-											<td>645</td>
-											<td>24%</td>
-											<td>$14,421</td>
-										</tr>
-										<tr>
-											<td>linkedin.com</td>
-											<td>2739</td>
-											<td>539</td>
-											<td>20%</td>
-											<td>$12,370</td>
-										</tr>
-									</tbody>
-								</table>	<a href="#">Show More</a>
-							</div>
-						</div>
-					</div>
-					<!--right side-->
-					<div class="col-md-4">
-						<div class="row">
-							<div class="col-md-12 pink">
-								<div class="avt">
-									<div class="proimg"></div>
-									<h6>Nick Herasimenka</h6>
-									<p>United states</p>
-									<div class="smedia">
-										<div class="insta"></div>
-										<div class="tw"></div>
-										<div class="fb"></div>
-										<div class="email"></div>
-									</div>
-								</div>
-								<div class="our">
-									<div class="pro-menu">
-										<p>Our Users</p>	<span>gggg</span>	
-									</div>
-									<div class="userflex">
-										<img src="images/drew.png">
-										<div class="uname">
-											<h5>Drew James</h5>
-											<p>United States <span>mobile : 871.567.4877</span>
-											</p>
-										</div>
-									</div>
-									<div class="userflex">
-										<img src="images/Bavidkames.png">
-										<div class="userico2"></div>
-										<div class="uname">
-											<h5>Bavidkames</h5>
-											<p>United States <span>mobile : 871.567.4877</span>
-											</p>
-										</div>
-									</div>
-									<div class="userflex">
-										<img src="images/LavidEmes.png">
-										<div class="uname">
-											<h5>Lavid Emes</h5>
-											<p>United States <span>mobile : 871.567.4877</span>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12 blue">
-								<div class="vid-menu">
-									<p>Product Video</p>	<span>gggg</span>	
-								</div>
-								<div class="videobox">
-									<a href="https://www.youtube.com/watch?v=Oy6hk6Y7VHQ&feature=youtu.be" target="_blank">
-										<div id="playicon">
-											<div class="plyimg"></div>
-										</div>
-									</a>
-									<img src="images/Videotumbnail.png" width="100%">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, tden Popper.js, tden Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/custom.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-	<script type="text/javascript">
-		var ctx = document.getElementById('linechart').getContext('2d');
-	
-var gradientpurple = ctx.createLinearGradient(0, 0, 0, 450);
-gradientpurple.addColorStop(0, 'rgba(105,100,243,1)');
-gradientpurple.addColorStop(0.5, 'rgba(234,233,253,0.43)');
-gradientpurple.addColorStop(1, 'rgba(255,255,255,0.43)');
+    <title>Vijay</title>
+  </head>
+  <body>
+   
+   <section class="fix-nav"> 
+    <nav class="navbar navbar-expand-sm fixed-top navbar-light bg-light"> 
 
-var gradient = ctx.createLinearGradient(0, 0, 0, 450);
-gradient.addColorStop(0, 'rgba(85,216,254,1)');
-gradient.addColorStop(0.5, 'rgba(231,249,255,0.43)');
-gradient.addColorStop(1, 'rgba(255,255,255,0.43)');
+    <div class="container"> 
+      <a class="navbar-brand text-success" href="#"> 
+      <img src="images/logo.png" class="img-fluid" alt="Responsive image">
+      </a> 
+      <button class="navbar-toggler" type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"> 
+        <span class="navbar-toggler-icon"></span> 
+      </button> 
+
+      <div class="collapse navbar-collapse"></div> 
+
+      <div class="collapse navbar-collapse"
+        id="navbarSupportedContent"> 
+        
+        <ul class="navbar-nav mr-auto">
+          <div class="smedia"><img src="images/social.png" class="img-fluid" alt="Responsive image"></div>
+          <li class="nav-item active"> 
+            <a class="nav-link"
+            href="#"> 
+            Home 
+            <span class="sr-only"> 
+              (current) 
+            </span> 
+          </a> 
+          </li> 
+          <li class="nav-item"> 
+            <a class="nav-link"
+            href="#"> 
+            About 
+            </a> 
+          </li> 
+          <li class="nav-item"> 
+            <a class="nav-link"
+            href="#"> 
+            Projects 
+            </a> 
+          </li>
+          <li class="nav-item"> 
+            <a class="nav-link"
+            href="#"> 
+            Images 
+            </a> 
+          </li>
+          <li class="nav-item"> 
+            <a class="nav-link"
+            href="#"> 
+            Videos 
+            </a> 
+          </li>
+          <li class="nav-item"> 
+            <a class="nav-link"
+            href="#"> 
+            Contact 
+            </a> 
+          </li> 
+        </ul>
+      </div> 
+    </div> 
+  </nav>
+  </section>
 
 
-	  var dataFirst = {
-	    label: "Product Sold",
-	    data: [15, 10, 15, 18, 15, 20],
-	    pointStyle:'circle',
-	    pointBorderWidth:3,
-	    lineTension: 0.4,
-	    fill: true,
-	    borderColor: '#a5a3fb',
-	    backgroundColor:gradientpurple
-	  };
-	
-	var dataSecond = {
-	    label: "Total Views",
-	    data: [18, 15, 17, 13, 17, 15],
-	    pointStyle:'circle',
-	    pointBorderWidth:3,
-	    lineTension: 0.4,
-	    fill: true,
-	  borderColor: '#65dbff',
-	    backgroundColor:gradient
-	
-	  };
-	
-	var speedData = {
-	  labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
-	  datasets: [dataFirst, dataSecond],
-	};
-	
-	var chart = new Chart(ctx, {
-	    // tde type of chart we want to create
-	    type: 'line',
-	    // tde data for our dataset
-	    data: speedData,
-	    // Configuration options go here
-	    options: {
-	   
-	    	legend: {
-	            display: true,
-	            position: 'bottom',
-	            fullWidth:true,
-	
-	
-	            labels: {
-	                fontColor: '#000',
-	                boxWidth:20,
-	               
-	            }
-	        },
-	    	responsive: true,
-	    maintainAspectRatio: false,
-	    scales: {
-	    	xAxes: [{
-	            gridLines: {
-	                        drawBorder: true,
-	                        display: true,
-	
-	        color: '#F9FAF8'
-	                    }
-	        }],
-	
-	        yAxes: [{
-	        	gridLines: {
-	                        drawBorder: true,
-	                        display: true,
-	
-	        color: '#F9FAF8'
-	                    },
-	            ticks: {
-	
-	            	 callback: function(value, index, values) {
-	                        return '$' + value+'k';
-	                    },
-	
-	                beginAtZero:false,
-	
-	            }
-	        }]
-	    }
-	    }
-	});
-	
-	
-	
-	var ctx = document.getElementById('roundchart').getContext('2d');
-	
-	var chart = new Chart(ctx, {
-	    // tde type of chart we want to create
-	    type: 'doughnut',
-	
-	    // tde data for our dataset
-	    data: {
-	        labels: ['France', 'Italy', 'German', 'Japan'],
-	        datasets: [{ 
-	            backgroundColor: ["#55d8fe","#ff8373","#ffda83","#a3a0fb",],
-	            borderwidth: 0,
-	            data: [6, 5, 3, 4]
-	        }]
-	    },
-	
-	    // Configuration options go here
-	    options: {
-	 
-	 elements: {
-	      arc: {
-	          borderWidth: 0
-	      }
-	  },
-	    	legend: {
-	            display: true,
-	            position: 'bottom',
-	            labels: {
-	                fontColor: '#000',
-	                boxWidth:20
-	
-	                
-	            }
-	        },
-	
-	    	responsive: true,
-	    maintainAspectRatio: false,
-	    scales: {
-	    	xAxes: [{
-	        	display:true,
-	        	gridLines: {
-	                        drawBorder: true,
-	                        display: false,
-	                    },
-	            ticks: {
-	            	display:false,
-	                beginAtZero:false
-	            }
-	        }],
-	
-	        yAxes: [{
-	        	display:false,
-	        	gridLines: {
-	                        drawBorder: true,
-	                        display: false,
-	                    },
-	            ticks: {
-	            	display:false,
-	                beginAtZero:true
-	            }
-	        }]
-	    }
-	    }
-	});
-	</script>
-</body>
+  <!--carousel-->
+  <section class="banner">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img  class="d-block w-100" src="images/hero.png" alt="First slide">
+      <div class="carousel-caption d-none d-md-block">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h5>PRODUCTION</h5>
+    <p>HOUSE</p>
+            </div>
+            <div class="col-md-6">
+            </div>
+          </div>
+        </div>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img  class="d-block w-100" src="images/hero.png" alt="Second slide">
+     <div class="carousel-caption d-none d-md-block">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h5>PRODUCTION</h5>
+    <p>HOUSE</p>
+            </div>
+            <div class="col-md-6">
+            </div>
+          </div>
+        </div>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img  class="d-block w-100" src="images/hero.png" alt="Third slide">
+      <div class="carousel-caption d-none d-md-block">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h5>PRODUCTION</h5>
+    <p>HOUSE</p>
+            </div>
+            <div class="col-md-6">
+            </div>
+          </div>
+        </div>
+  </div>
+  </div>
+  <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a> -->
+</div>
+</section>
+<!--end of carousel-->
 
+    <section class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h5>VIJAIEEBHAVA ARTS PRODUCTION HOUSE</h5>
+            <p>Vijaieebaha ars production is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 3200s, when an unknown printer took a galley of type and scrambled.</p>
+            <p>Vijaieebaha ars production is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 3200s, when an unknown printer took a galley of type and scrambled.the industry's standard dummy text ever since the 3200s, when an unknown printer took a galley of type and scrambled.when an unknown printer took a galley of type and scrambled.the industry's standard dummy text ever since the 3200s, when an unknown printer took a galley of type and scrambled.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+
+    <section class="card-sec">
+    <div class="container w-70">
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="card">
+                <div class="card-block">
+                    <img src="images/card.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="card">
+                <div class="card-block">
+                     <img src="images/card.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="card">
+                <div class="card-block">
+                     <img src="images/card.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="card">
+                <div class="card-block">
+                     <img src="images/card.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+    </section>
+
+
+<section class="mt"></section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3"><p>Design &amp; Developed By BMW</p></div>
+      <div class="col-md-5"><p>&copy; Copright 2020 - All Rights Reserved</p></div>
+      <div class="col-md-4">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Images</a>
+        <a href="#">Videos</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/min.js"></script>
+  </body>
 </html>
