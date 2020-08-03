@@ -158,9 +158,7 @@ footer a:hover{
 	}
 
 	.navbar-toggler{
-          bottom: 15px;
-    position: absolute;
-    right: 15px;
+          margin-top: 50px;
 	}
 
 	.smedia{
