@@ -62,7 +62,7 @@
 
 $(document).ready(function(){
 
-$(".toggle").click(function(){
+$(".tog-nav").click(function(){
 	console.log("yes")
 	$(".navmenu-toggle").toggleClass("open");
 });
@@ -72,4 +72,15 @@ $(".move-top").click(function(){
     $(window).scrollTop(0);
 });
 
+     
+$(".youtube-link").grtyoutube({
+	autoPlay:true,
+	theme: "dark"
 });
+
+
+});
+
+
+
+
