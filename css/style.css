@@ -577,7 +577,7 @@ input.form-control.bg-theme {
 
 /*new css*/
 .breadcrumb{
-    display: none;
+    display: none !important;
 }
 
 .service ul{
@@ -627,9 +627,7 @@ margin-left: 14px;
 }
 
 
-.inner-banner-w3ls{
-    top: 75px !important;
-}
+
 .br-none{
     border: none !important;
 }
@@ -1059,6 +1057,110 @@ h3.home-banner-w3 {
     z-index: 0;
 }
 
+.corporate{
+    background: url(../images/corp.jpg) no-repeat center;
+    min-height: 500px;
+    background-size: cover;
+}
+
+.project{
+    background: url(../images/pro.jpeg) no-repeat center;
+    min-height: 500px;
+    background-size: cover;
+}
+
+.merge{
+    background: url(../images/merge.jpeg) no-repeat center;
+    min-height: 500px;
+    background-size: cover;
+}
+
+.debt,.business,.virtual,.audit,
+.serve,.out,.legal,.exchange,.invent,
+.value,.cap,.con,.bpo,.visa,
+.abt,.ins,.netmap,.sub{
+    min-height: 500px;
+    background-size: cover;
+}
+
+.debt{
+    background: url(../images/debt.jpeg) no-repeat center;
+}
+
+.sub{
+    background: url(../images/sup.webp) no-repeat center;
+    background-size: cover;
+
+}
+
+.business{
+    background: url(../images/business.jpeg) no-repeat center;
+}
+
+.netmap{
+    background: url(../images/map.jpeg) no-repeat center;
+}
+
+.ins{
+    background: url(../images/ins.jpeg) no-repeat center top;
+}
+
+
+.virtual{
+    background: url(../images/virtual.jpeg) no-repeat center -200px;
+}
+
+.audit{
+    background: url(../images/audit.jpeg) no-repeat center;
+}
+
+
+.serve{
+    background: url(../images/services.jpeg) no-repeat center top;
+}
+
+.out{
+    background: url(../images/out.jpeg) no-repeat center;
+}
+
+.legal{
+    background: url(../images/legal.jpeg) no-repeat center;
+}
+
+.exchange{
+    background: url(../images/exchange.jpeg) no-repeat center;
+}
+
+
+.invent{
+    background: url(../images/inventry.jpeg) no-repeat center;
+}
+
+.value{
+    background: url(../images/value.jpeg) no-repeat center; 
+}
+
+.cap{
+    background: url(../images/cap.jpeg) no-repeat center -200px; 
+}
+
+.con{
+    background: url(../images/consult.jpg) no-repeat center -200px; 
+}
+
+.bpo{
+    background: url(../images/bpo.jpg) no-repeat center; 
+}
+
+.visa{
+    background: url(../images/visa.jpeg) no-repeat center; 
+}
+
+.abt{
+    background: url(../images/abt.jpeg) no-repeat center; 
+}
+
+
 li.breadcrumb-item a {
     color: #000;
 }
@@ -1304,9 +1406,11 @@ a.blog_link {
 
 @media screen and (max-width: 600px) {
 
-    .inner-banner-w3ls{
-        top: 56px !important;
+    .virtual {
+        background: url(../images/virtual.jpeg) no-repeat center;
+        background-size: 500px;
     }
+
 
     .logo{
         width: 100px;
