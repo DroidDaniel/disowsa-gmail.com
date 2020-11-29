@@ -1935,11 +1935,17 @@ h3.w3f_title {
     }
 
     .inner-banner-w3ls {
-        min-height: 250px;
+        min-height: 350px;
+        background-size: 1000px;
     }
 }
 
 @media screen and (max-width: 991px) {
+    nav ul ul{
+        height: 500px;
+    overflow: scroll;
+    }
+    
     .br-right::before{
     display: none;
     }
@@ -2209,6 +2215,7 @@ h3.w3f_title {
 
     .inner-banner-w3ls {
         min-height: 200px;
+        background-size: 500px;
     }
 
     .slide-img {
@@ -2257,6 +2264,7 @@ h3.w3f_title {
 @media screen and (max-width: 375px) {
     .inner-banner-w3ls {
         min-height: 180px;
+        background-size: 500px;
     }
 }
 
