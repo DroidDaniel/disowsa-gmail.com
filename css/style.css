@@ -577,6 +577,7 @@ input.form-control.bg-theme {
 
 /*new css*/
 
+
 /* banner */
 
 .serv {
@@ -602,6 +603,58 @@ input.form-control.bg-theme {
     left: 0;
     z-index: -1;
 }
+
+
+.blog-sec{
+    background: url(../images/build.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding: 100px 0;
+}
+
+
+.blog-sec:before {
+    position: absolute;
+    content: '';
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+
+.cnt-sec{
+    background: url(../images/call.jpeg) center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding: 100px 0;
+}
+
+
+.cnt-sec:before {
+    position: absolute;
+    content: '';
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
 
 
 
@@ -1733,6 +1786,7 @@ form.register-wthree .form-control {
     padding: 2em;
     border: 20px solid #eee;
     border-radius: 20px;
+    background-color: #fff;
 }
 
 #contact iframe {
