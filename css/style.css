@@ -1,4 +1,4 @@
-
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 body {
     margin: 0;
     background: #fff;
@@ -576,6 +576,262 @@ input.form-control.bg-theme {
 
 
 /*new css*/
+
+/* banner */
+
+.serv {
+    background: url(../images/build.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding: 100px 0;
+}
+
+
+.serv:before {
+    position: absolute;
+    content: '';
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+
+.serv-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    color: #fff;
+    border: solid 1px #ccc;
+}
+
+.serv-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.serv-card:nth-child(odd) {
+    background: #009ac6;
+    transition: all 0.4s;
+    cursor: pointer;
+  }
+
+  .serv-card:nth-child(odd):hover {
+    background: #fff;
+    color: #000;
+  }
+  
+  .serv-card:nth-child(even) {
+    background: #15435a;
+  }
+
+
+  .serv-card:nth-child(even):hover {
+    background: #fff;
+    color: #000;
+  }
+
+.serv-card img{
+    width: 90px;
+    height: 90px;
+    margin-bottom: 20px;
+}
+
+.vid-wrraper p{
+    font-size: 22px;
+    line-height: 37px;
+    text-align: justify;
+}
+
+#carousel .caption h2{
+    margin-bottom: 10px;
+}
+
+.video-con{
+    padding: 50px 0;
+    background-color: #333;
+}
+
+.vid-wrraper{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#carousel .carousel-item.boat {
+    background-image: url(../images/banner.jpg);
+  }
+  
+  #carousel .carousel-item.sea {
+    background-image: url("https://picsum.photos/1200/600/?image=1050");
+  }
+  
+  #carousel .carousel-item.river {
+    background-image: url("https://picsum.photos/1200/600/?image=1015");
+  }
+  
+  #carousel .carousel-item {
+    height: 100vh;
+    width: 100%;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+  }
+  
+  #carousel .carousel-inner .carousel-item {
+    transition: -webkit-transform 2s ease;
+    transition: transform 2s ease;
+    transition: transform 2s ease, -webkit-transform 2s ease;
+  }
+  
+  #carousel .carousel-item .caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    color: white;
+    animation-duration: 1s;
+    animation-delay: 2s;
+  }
+  
+  #carousel .caption h2 {
+    animation-duration: 1s;
+    animation-delay: 2s;
+  }
+  
+  #carousel .caption p {
+    animation-duration: 1s;
+    animation-delay: 2.2s;
+    color: #fff;
+  }
+  
+  #carousel .caption a {
+    animation-duration: 1s;
+    animation-delay: 2.4s;
+  }
+  
+  /* Button */
+  .delicious-btn {
+    display: inline-block;
+    min-width: 160px;
+    height: 60px;
+    color: #ffffff;
+    border: none;
+    border-left: 3px solid #49a5fc;
+    border-radius: 0;
+    padding: 0 30px;
+    font-size: 16px;
+    line-height: 58px;
+    font-weight: 600;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    text-transform: capitalize;
+    background-color: #0083ff;
+  }
+  
+  .delicious-btn.active, .delicious-btn:hover, .delicious-btn:focus {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #1c8314;
+    border-color: #40ba37;
+  }
+
+
+.mob i{
+    margin-right: 5px;
+}
+
+.top_contact_bar{
+    background-color:#0083ff;
+    color: #fff;
+    padding: 5px 0;
+}
+
+.top_contact_bar a{
+    color: #fff;
+}
+
+.mail-ico{
+    margin-right: 10px;
+}
+
+.social-media a{
+    padding: 0 10px 0 0;
+}
+
+figure.snip1205 {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  background: #000000;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+figure.snip1205 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+figure.snip1205 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+figure.snip1205 i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  font-size: 34px;
+  color: #000000;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: #ffffff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  -webkit-transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 300ms 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+figure.snip1205 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+figure.snip1205:hover img,
+figure.snip1205.hover img {
+  opacity: 0.3;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+figure.snip1205:hover i,
+figure.snip1205.hover i {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
 .breadcrumb{
     display: none !important;
 }
@@ -826,8 +1082,8 @@ margin-left: 14px;
 }
 
 .acc-info-p0 img{
-    width: 350px;
-    height: 248px !important;
+    width: 520px;
+    height: 300px !important;
     object-fit: cover;
 }
 
@@ -842,9 +1098,9 @@ margin-left: 14px;
 
 .tim{
     position: absolute;
-    max-width: 350px;
+    max-width: 520px;
     width: 100%;
-    height: 250px;
+    height: 300px;
     background-color: rgba(0, 0, 0, 0.24);
     z-index: 9;
     transition: all .4s;
@@ -1945,7 +2201,7 @@ h3.w3f_title {
         height: 500px;
     overflow: scroll;
     }
-    
+
     .br-right::before{
     display: none;
     }
@@ -2175,10 +2431,15 @@ h3.w3f_title {
 }
 
 @media screen and (max-width: 480px) {
+
+    .top_contact_bar{
+        font-size: 12px;
+    }
+ 
     .service ul li{
         font-size: 17px;
-
     }
+
     .service p {
         font-size: 17px;
         line-height: 28px;
