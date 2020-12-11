@@ -576,6 +576,46 @@ input.form-control.bg-theme {
 
 
 /*new css*/
+.serv-card{
+    color: #fff;
+}
+
+.acc:hover,
+.bank:hover,
+.hr:hover,
+.audit:hover,
+.bus:hover,
+.inv:hover,
+.comp:hover,
+.risk:hover,
+.sup:hover,
+.fin:hover,
+.doc:hover,
+.val:hover,
+.tax:hover,
+.imm:hover,
+.serv-first:hover
+{
+    color: #fff;
+    cursor: pointer;
+}
+
+.acc:hover .svg-img,
+.bank:hover .svg-img,
+.hr:hover .svg-img,
+.audit:hover .svg-img,
+.bus:hover .svg-img,
+.inv:hover .svg-img,
+.comp:hover .svg-img,
+.risk:hover .svg-img,
+.sup:hover .svg-img,
+.fin:hover .svg-img,
+.doc:hover .svg-img,
+.val:hover .svg-img,
+.tax:hover .svg-img,
+.imm:hover .svg-img{
+    filter: brightness(0) invert(1);
+}
 
 
 /* banner */
@@ -663,7 +703,7 @@ input.form-control.bg-theme {
     align-items: center;
     justify-content: center;
     padding: 100px 0;
-    color: #fff;
+    color: #000;
     border: solid 1px #ccc;
 }
 
@@ -672,29 +712,21 @@ input.form-control.bg-theme {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 
 .serv-card:nth-child(odd) {
-    background: #009ac6;
+    background: #326eb7;;
     transition: all 0.4s;
     cursor: pointer;
   }
 
-  .serv-card:nth-child(odd):hover {
-    background: #fff;
-    color: #000;
-  }
-  
+ 
   .serv-card:nth-child(even) {
-    background: #15435a;
+    background: #d7d9db;
   }
 
-
-  .serv-card:nth-child(even):hover {
-    background: #fff;
-    color: #000;
-  }
 
 .serv-card img{
     width: 90px;
@@ -727,15 +759,19 @@ input.form-control.bg-theme {
 }
 
 #carousel .carousel-item.boat {
-    background-image: url(../images/banner.jpg);
+    background-image: url(../images/banner1.jpg);
   }
   
   #carousel .carousel-item.sea {
-    background-image: url("https://picsum.photos/1200/600/?image=1050");
+    background-image:  url(../images/banner2.jpg);
   }
   
   #carousel .carousel-item.river {
-    background-image: url("https://picsum.photos/1200/600/?image=1015");
+    background-image: url(../images/banner3.jpg);
+  }
+
+  #carousel .carousel-item.comp {
+    background-image: url(../images/banner4.jpg);
   }
   
   #carousel .carousel-item {
@@ -799,8 +835,12 @@ input.form-control.bg-theme {
     font-size: 16px;
     font-weight: 600;
     color: #ffffff;
-    background-color: #1c8314;
-    border-color: #40ba37;
+    background-color: #336fb7;
+    border-color: #0083ff;
+  }
+
+  .lst li{
+      margin-bottom: 10px;
   }
 
 
