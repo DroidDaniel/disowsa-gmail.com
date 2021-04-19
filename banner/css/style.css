@@ -18,6 +18,8 @@
 .logo{
     width: 180px;
     margin: 10px auto;
+    position: relative;
+    z-index: 99;
 }
 
 .stripe{
@@ -229,4 +231,48 @@
     z-index: 9;
     left: 77px;
     display: none;
+}
+
+.icon{
+    width: 17px;
+    height: 15px;
+    overflow:hidden;
+    border-radius:0 0 0 8px;
+    background-color: rgba(255, 255, 255, .77);
+    background-position: left top;
+    transition: width .2s;
+    position:absolute;
+    top:0; right:0;
+  cursor: pointer;
+}
+.icon:hover{
+    width:73px
+}
+
+.add_logo{
+    width: 22px;
+    height: 22px;
+    border-radius:0 0 0 8px;
+    position:absolute;
+    cursor:pointer;
+    right:-4px;
+    top:-3px;
+    z-index:9;
+}
+
+span{
+  font-size:11px;
+   position:absolute;
+   color: #525252;
+  right:15px;
+  top:1px;
+  z-index:9;
+  opacity:0;
+  transition: opacity .2s;
+  cursor: pointer;
+  
+}
+
+.icon:hover span{
+    opacity:1;
 }

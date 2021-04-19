@@ -1,5 +1,12 @@
 var loopInterval = null;
     $(document).ready(function() {
+        $(".add_logo,.icon,.txt").hover(function(){
+            $(".icon").css("width", "73px");
+            $(".txt").css("opacity", "1");
+            }, function(){
+            $(".icon").css("width", "17px");
+            $(".txt").css("opacity", "0");
+          });
     var i =0;
     init();
     function resetObjects(){
